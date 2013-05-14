@@ -1,10 +1,10 @@
 x = seq(10,10000,by=10)
 y = 20*log((2*pi*x*0.1*0.47*2200*10^-12 + 0.1*10^-6)/((570*10^-9) + (2*pi*x*0.1*0.47*10^-12*3200)))
 bitmap(file='lab4-1.jpg', type="jpeg")
-plot(x,y,log="x",yaxt='n')
+plot(x,y,log="x",yaxt='n',type='l',lty=1,lwd=2)
 dev.off()
 
 y2 = 20*log((2*pi*x*0.1*0.47*1000*10^-12 + 0.47*10^-6)/((570*10^-9) + (2*pi*x*0.1*0.47*10^-12*3200)))
 bitmap(file='lab4-2.jpg', type="jpeg")
-plot(x,y2,log="x",yaxt='n')
+plot(x,y2,log="x",yaxt='n',type='l',lty=1,lwd=2)
 dev.off()
