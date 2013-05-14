@@ -1,0 +1,10 @@
+x = seq(10,10000,by=5)
+y = 20*log((2*pi*x*0.1 + 220)/(1220 + 2*pi*x*0.147)
+bitmap(file='lab5-1.jpg', type="jpeg")
+plot(x,y,log="x",yaxt='n')
+dev.off()
+
+y2 = 20*log((2*pi*x*0.047 + 1000)/(1220 + 2*pi*x*0.147)
+bitmap(file='lab5-2.jpg', type="jpeg")
+plot(x,y2,log="x",yaxt='n')
+dev.off()
