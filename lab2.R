@@ -1,6 +1,10 @@
-x = as.vector(100,500,1000,1500,2000,5000,10000)
+x = seq(10,10000,by=5)
 y = 20*log((3300/5500)/(1 + (2*pi*x*3300*2200*100*100^-9)/5500))
-plot(x,y,log="x",yaxt='n')
+bitmap(file='lab2-1.jpg',type='jpeg')
+plot(x,y,log='x',yaxt='n',type='l',lwd=2,lty=1)
+dev.off()
 
 y2 = 20*log((3300)/(3300 + 2200/(1 + 2*pi*x*2200*100*10^-9)))
-plot(x,y2,log="x",yaxt='n')
+bitmap(file='lab2-2.jpg',type='jpeg')
+plot(x,y2,log="x",yaxt='n',type='l',lty=1,lwd=2)
+dev.off()
